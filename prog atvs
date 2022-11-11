@@ -1,0 +1,279 @@
+Scanner in = new Scanner(System.in);
+// Atividade1! String        
+System.out.println("atividade1!!");        
+String texto="Agaragã";        
+System.out.println(texto);        
+System.out.println("Oi "+texto);        
+//Atividade2! String + Variavel            
+System.out.println("Atividade2!!");        
+String nome = "Simer";        
+System.out.println("Oi "+nome);        
+nome= "Rogi";        
+System.out.println("Oi "+nome);            
+//Atividade3! int                    
+System.out.println("Atividade3!!");       
+nome= "Marcos";       
+int quantAlunos=50;     
+quantAlunos= quantAlunos + 20;   
+System.out.println(nome +" da aula para " +quantAlunos + " alunos");        
+//Atividade4! Strings + int + double          
+System.out.println("Atividade 4!!");   
+String x;    
+x= "Marcos";    
+String y;     
+y= "Bruna";    
+System.out.println("Oi" + x );
+System.out.println("Oi" + y );   
+System.out.println(" Atividade ");  
+x= "Bruna";  
+y= "Marcos"; 
+System.out.println("Oi" + x );   
+System.out.println("Oi" + y );      
+System.out.println("Atividade 5!!");   
+//Atv5! Criar uma Variavel de Uma Tarifa de energia    
+double tarifa = 22.50;       
+double consumo = 50.00;
+double valorTotal= tarifa * consumo; 
+double desconto = valorTotal * 0.10; 
+double pagar = valorTotal - desconto;  
+System.out.println("Tarifa: " + tarifa );   
+System.out.println("Consumo: " + consumo );
+System.out.println("Valor: " + valorTotal);
+System.out.println("O valor a pagar é: " + pagar); 
+//Atv6! Area do Quadrado/ 1° Introdução com usuario  
+System.out.println("Atividade 6!!");    
+int lado=4;       
+System.out.println("Lado=4");  
+System.out.println(lado*lado + " É Area do quadrado");   
+System.out.println("Atividade 7!!");      
+System.out.println("Digite o Lado do Quadrado:");
+double lado1 = in.nextDouble();        
+double area = lado1*lado1;       
+System.out.println("a aréa do quadrado de lado " + lado1 + " é " + area);   
+//Atv7! Area do triangulo            
+System.out.println(" Digite a altura do triangulo: ");   
+double altura = in.nextDouble();     
+System.out.println(" Digite o a base do triangulo: ");  
+double base = in.nextDouble();       
+double area1 = altura + base / 2;   
+System.out.println(" O valor do da aréa do triangulo é: " + area1);  
+//Atv 8 Nome de usuario     
+System.out.println("Olá! Digite seu nome a seguir:");     
+String nomeusu = in.next();      
+System.out.println("Digite o Lado maior do retangulo: ");
+double ladoMaiorret = in.nextDouble(); 
+System.out.println("Digite o lado menor do retangulo:");   
+double ladoMenorret = in.nextDouble();   
+double areaRet = ladoMaiorret * ladoMenorret;  
+System.out.println("A aréa do Retangulo é " + areaRet ); 
+// Exercicio              
+//Tarifa de Energia      
+double tarifa1 = 2;        
+double consumo1 = 0;     
+double desconto1 = 0.3;   
+double valorDesconto1 = 0;   
+double valorPagar1 = 0;        
+System.out.println("Digite o Consumo:");  
+consumo1 = in.nextDouble();     
+if(consumo1<100){       
+valorDesconto1 = tarifa1*consumo1*desconto1; 
+System.out.println("Entrou no IF");      
+}       
+valorPagar1 = tarifa1 * consumo1 - valorDesconto1;
+System.out.println("Valor a pagar: " + valorPagar1);
+//Tarifa com Descontos e taxas          
+double tarifa2 = 2;       
+double consumo2 = 0;      
+double desconto2 = 0.3;  
+double valorDesconto2 = 0;      
+double valorPagar2 = 0;   
+double taxaDeUso = 0.5;      
+System.out.println("Digite o consumo:"); 
+consumo2 = in.nextDouble();     
+valorPagar2 = consumo2 * tarifa2;    
+if(consumo2<100) {        
+valorDesconto2 = tarifa2 * consumo2 * desconto2;    
+}      
+if(consumo2>300) {    
+valorDesconto2 = tarifa2 * consumo2 * taxaDeUso;    
+}        
+System.out.println("Valor a pagar: " + valorPagar2 + valorDesconto2);    
+//tarifa completa       
+double tarifa3 = 2;      
+double consumo3 = 0;    
+double desconto3 = 0.3;   
+double valorPagar3 = 0; 
+double taxaDeUso3 = 0.5;  
+double valorDesconto3 = 0;
+double valorAumento3 = 0;    
+System.out.println("Digite o consumo:"); 
+consumo3 = in.nextDouble();  
+valorPagar3 = consumo3 * tarifa3; 
+if(consumo3<100) {
+valorDesconto3 = valorPagar3 * desconto3  ; 
+System.out.println("Desconto de uso");    
+valorPagar3 = valorPagar3 - valorDesconto3;      
+}          
+if(consumo3>300) {    
+valorAumento3 = valorPagar3 * taxaDeUso3;     
+System.out.println("Juros de uso");     
+valorPagar3 = valorPagar3 + valorAumento3;       
+}       
+System.out.println("Valor a Pagar: " + valorPagar3);  
+//Atividade Verdadeiro ou falso!!     
+System.out.println("Digite o numero abaixo:");       
+int numero8 = in.nextInt();       
+if(numero8 % 2 == 0){          
+System.out.println(numero8 + " È par!");  
+}      
+else{      
+System.out.println(numero8 + " É impar!");    
+}       
+Scanner in9 = new Scanner(System.in);   
+String tempo;    
+String chuva;      
+String sol;        
+String carro;   
+String moto;     
+String sim = "s"; 
+System.out.println("Está chovendo?(s/n)"); 
+tempo = in.next();   
+if(tempo.equals(sim)){   
+System.out.println("Marcia vai de carro");        
+}else{      
+System.out.println("Marcia vai de moto");   
+}        // ATV tipo de triangulo  
+double catetoA;  
+double catetoB;   
+double hipot;       
+System.out.println("Digite o Cateto A abaixo:");    
+catetoA = in.nextDouble( );  
+System.out.println("Digite o Cateto B abaixo:");  
+catetoB = in.nextDouble( );  
+System.out.println("Digite a Hipotenusa abaixo:");   
+hipot = in.nextDouble();       
+if (catetoA == catetoB && catetoA == hipot) {        
+System.out.println("Esse triângulo é Equilatero");    
+}     
+if (catetoA != catetoB && catetoA != hipot && catetoB != hipot){       
+System.out.println("Esse triângulo é Escaleno");    
+}      
+if (catetoA == catetoB && catetoA != hipot){        
+System.out.println("Esse triângulo é Isósceles");    
+}              
+//identificar se é adult, crian,idoso.      
+int id;      
+System.out.println("Digite a idade a seguir:");      
+id = in.nextInt();   
+if (id <3 ){       
+System.out.println( id + " anos é a idade de um bebê"); 
+}else if (id <12){     
+System.out.println( id + " anos é a idade de uma criança" );      
+}else if (id<21){  
+System.out.println( id + " anos é a idade de um adolescente");    
+}else if (id<65){   
+System.out.println(id + " anos é a idade de um adulto");      
+}else {            
+System.out.println(id + " anos é a idade de um idoso");      
+}                //contador     
+System.out.println("Digite o número a ser contado:");  
+int cont = 1;        int max = 0;    
+max = in.nextInt();       
+while(cont<=max){        
+System.out.println(cont);      
+cont++;        }               
+//multiplicação com + e -      
+int nmra = 0;      
+int nmrb = 0;        
+int cont1 = 0;       
+int result = 0;     
+int sinais = 0;     
+System.out.println("Digite o número:");        
+nmra = in.nextInt();       
+System.out.println("Digite o número de vezes: ");  
+nmrb = in.nextInt();      
+if(nmra<0){      
+sinais++;         
+nmra = 0 - nmra;  
+}       
+if(nmrb<0){  
+sinais++;  
+nmrb = 0 - nmrb; 
+}     
+while(cont1<nmra){ 
+result = nmrb + result;
+cont1++;   
+}if(sinais==1){         
+result = 0 - result;   
+}          
+System.out.println("Total:" + result); 
+//Divisão com + e -   
+int dividendo = 0;      
+int divisor = 0;     
+int result13 = 0;      
+System.out.println("Digite o numero a ser divido:"); 
+dividendo = in.nextInt();  
+System.out.println("Digite o divisor:");      
+divisor = in.nextInt();     
+while(dividendo >= divisor){     
+dividendo = dividendo - divisor;       
+result13++;     
+}      
+System.out.println("resultado: " + result13);
+//Identificar o maior número num Vetor!!    
+int [] vet = { 5 , 8 , 11 , 1 , 3 , 15 , 9};//Vetor   
+int posvet = 0;//posição do valor
+int contvet = 1;      
+//nome do vetor     
+while(contvet < vet.length){      
+//nome do vetor e contador  / nome do vetor e posição  
+if(vet[contvet] > vet[posvet]){   
+posvet = contvet; //posição igual a contador         
+}          
+contvet++;                     
+}              
+//Imprimir valores do vetor   
+int[] vetor = {3,4,5};    
+for(int i = 0; i < vetor.length; i++){   
+System.out.println(vetor[i]);
+}               
+int nmra1 = in.nextInt(); 
+int nmrb1 = in.nextInt();  
+for(int i = 0; i < nmrb; i++){     
+}           
+int cont2 = 0;   
+int result2 = 0;  
+int sinais2 = 0;  
+System.out.println("Digite o número:");  
+System.out.println("Digite o número de vezes: ");  
+if(nmra1<0){      
+sinais2++;       
+nmra1 = 0 - nmra;  
+}   
+if(nmrb1<0){  
+sinais2++;     
+nmrb1 = 0 - nmrb1; 
+} 
+while(cont2<nmra1){  
+result2 = nmrb1 + result2;   
+cont2++;  
+}if(sinais2==1){   
+result2 = 0 - result2;    
+}       
+System.out.println(result2);   
+}   
+//Media inicio! 
+public static void mainmedia(String[] args) {  
+Scanner in = new Scanner(System.in);  
+System.out.println("Digite um número:"); 
+double num1 = in.nextDouble();   
+System.out.println("Digite outro número:");
+double num2 = in.nextDouble();    
+double calculo = media(num1, num2);   
+}      
+public static double media(double x, double y){  
+double resp = (x+y)/2;   
+return resp;   
+}   
+//Media fim!  
+}    
